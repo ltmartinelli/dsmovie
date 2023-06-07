@@ -1,9 +1,9 @@
-import './index.css'
+import Header from './components/Header'
 
 function App()
 {
   return (
-    <h1>oi</h1>
+    <Header/>
   )
 }
 
