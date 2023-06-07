@@ -176,6 +176,13 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.19.0"
 
+"@babel/runtime@^7.7.6":
+  version "7.22.3"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.22.3.tgz#0a7fce51d43adbf0f7b517a71f4c3aaca92ebcbb"
+  integrity sha512-XsDuspWKLUsxwCp6r7EhsExHtYfbe5oAGQ19kqngTdCPUoPQzOPdUbD/pB9PJiwb2ptYKQDjSJT3R6dC+EPqfQ==
+  dependencies:
+    regenerator-runtime "^0.13.11"
+
 "@babel/template@^7.20.7", "@babel/template@^7.21.9":
   version "7.21.9"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.21.9.tgz#bf8dad2859130ae46088a99c1f265394877446fb"
@@ -429,6 +436,18 @@
     "@nodelib/fs.scandir" "2.1.5"
     fastq "^1.6.0"
 
+"@types/history@*":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-5.0.0.tgz#29f919f0c8e302763798118f45b19cab4a886f14"
+  integrity sha512-hy8b7Y1J8OGe6LbAjj3xniQrj3v6lsivCcrmf4TzSgPzLkhIeKgc5IZnT7ReIqmEuodjfO8EYAuoFvIrHi/+jQ==
+  dependencies:
+    history "*"
+
+"@types/history@^4.7.11":
+  version "4.7.11"
+  resolved "https://registry.yarnpkg.com/@types/history/-/history-4.7.11.tgz#56588b17ae8f50c53983a524fc3cc47437969d64"
+  integrity sha512-qjDJRrmvBMiTx+jyLxvLfJU7UznFuokDv4f3WRuriHKERccVpFU+8XMQUAbDzoiJCsmexxRExQeMwwCdamSKDA==
+
 "@types/json-schema@^7.0.9":
   version "7.0.12"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
@@ -444,6 +463,23 @@
   resolved "https://registry.yarnpkg.com/@types/react-dom/-/react-dom-18.2.4.tgz#13f25bfbf4e404d26f62ac6e406591451acba9e0"
   integrity sha512-G2mHoTMTL4yoydITgOGwWdWMVd8sNgyEP85xVmMKAPUBwQWm9wBPQUmvbeF4V3WBY1P7mmL4BkjQ0SqUpf1snw==
   dependencies:
+    "@types/react" "*"
+
+"@types/react-router-dom@5.3.2":
+  version "5.3.2"
+  resolved "https://registry.yarnpkg.com/@types/react-router-dom/-/react-router-dom-5.3.2.tgz#ebd8e145cf056db5c66eb1dac63c72f52e8542ee"
+  integrity sha512-ELEYRUie2czuJzaZ5+ziIp9Hhw+juEw8b7C11YNA4QdLCVbQ3qLi2l4aq8XnlqM7V31LZX8dxUuFUCrzHm6sqQ==
+  dependencies:
+    "@types/history" "*"
+    "@types/react" "*"
+    "@types/react-router" "*"
+
+"@types/react-router@*":
+  version "5.1.20"
+  resolved "https://registry.yarnpkg.com/@types/react-router/-/react-router-5.1.20.tgz#88eccaa122a82405ef3efbcaaa5dcdd9f021387c"
+  integrity sha512-jGjmu/ZqS7FjSH6owMcD5qpq19+1RS9DeVRqfl1FeBMxTDQAGwlMWOcs52NDoXaNKyG3d1cYQFMs9rCrb88o9Q==
+  dependencies:
+    "@types/history" "^4.7.11"
     "@types/react" "*"
 
 "@types/react@*", "@types/react@^18.0.37":
@@ -1059,6 +1095,13 @@ has-flag@^4.0.0:
   resolved "https://registry.yarnpkg.com/has-flag/-/has-flag-4.0.0.tgz#944771fd9c81c81265c4d6941860da06bb59479b"
   integrity sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==
 
+history@*, history@^5.2.0:
+  version "5.3.0"
+  resolved "https://registry.yarnpkg.com/history/-/history-5.3.0.tgz#1548abaa245ba47992f063a0783db91ef201c73b"
+  integrity sha512-ZqaKwjjrAYUYfLG+htGaIIZ4nioX2L70ZUMIFysS3xvBsSG4x/n1V6TXV3N8ZYNuFGlDirFg32T7B6WOUPDYcQ==
+  dependencies:
+    "@babel/runtime" "^7.7.6"
+
 ignore@^5.2.0:
   version "5.2.4"
   resolved "https://registry.yarnpkg.com/ignore/-/ignore-5.2.4.tgz#a291c0c6178ff1b960befe47fcdec301674a6324"
@@ -1342,12 +1385,32 @@ react-refresh@^0.14.0:
   resolved "https://registry.yarnpkg.com/react-refresh/-/react-refresh-0.14.0.tgz#4e02825378a5f227079554d4284889354e5f553e"
   integrity sha512-wViHqhAd8OHeLS/IRMJjTSDHF3U9eWi62F/MledQGPdJGDhodXJ9PBLNGr6WWL7qlH12Mt3TyTpbS+hGXMjCzQ==
 
+react-router-dom@6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-6.2.1.tgz#32ec81829152fbb8a7b045bf593a22eadf019bec"
+  integrity sha512-I6Zax+/TH/cZMDpj3/4Fl2eaNdcvoxxHoH1tYOREsQ22OKDYofGebrNm6CTPUcvLvZm63NL/vzCYdjf9CUhqmA==
+  dependencies:
+    history "^5.2.0"
+    react-router "6.2.1"
+
+react-router@6.2.1:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/react-router/-/react-router-6.2.1.tgz#be2a97a6006ce1d9123c28934e604faef51448a3"
+  integrity sha512-2fG0udBtxou9lXtK97eJeET2ki5//UWfQSl1rlJ7quwe6jrktK9FCCc8dQb5QY6jAv3jua8bBQRhhDOM/kVRsg==
+  dependencies:
+    history "^5.2.0"
+
 react@^18.2.0:
   version "18.2.0"
   resolved "https://registry.yarnpkg.com/react/-/react-18.2.0.tgz#555bd98592883255fa00de14f1151a917b5d77d5"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
   dependencies:
     loose-envify "^1.1.0"
+
+regenerator-runtime@^0.13.11:
+  version "0.13.11"
+  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.11.tgz#f6dca3e7ceec20590d07ada785636a90cdca17f9"
+  integrity sha512-kY1AZVr2Ra+t+piVaJ4gxaFaReZVH40AKNo7UCX6W+dEwBo/2oZJzqfuN1qLq1oL45o56cPaTXELwrTh8Fpggg==
 
 resolve-from@^4.0.0:
   version "4.0.0"
