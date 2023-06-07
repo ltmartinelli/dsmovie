@@ -1,4 +1,5 @@
 import Arrow from '../../assets/img/arrow.svg'
+import './styles.css'
 
 export default function Pagination(){
     return(
