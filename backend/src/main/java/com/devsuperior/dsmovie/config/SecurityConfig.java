@@ -18,27 +18,16 @@ import static org.springframework.security.config.Customizer.withDefaults;
 
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfig {
-
-    @Autowired
-    private Environment env;
+public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 
-        http
-                .authorizeHttpRequests((authz) -> authz
-                        .anyRequest().permitAll()
-                )
-                .sessionManagement(sess -> sess.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .httpBasic(withDefaults())
-                .csrf(csrf -> csrf.disable())
-                .cors(cors -> cors.disable())
-                .headers(headers -> {
-                    if (Arrays.asList(env.getActiveProfiles()).contains("test")) {
-                        headers.frameOptions(frameOptions -> frameOptions.disable());
-                    }
-                });
+        http.headers().frameOptions().disable();
+        http.cors().and().csrf().disable();
+        http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
+        http.authorizeHttpRequests((auth) -> auth.anyRequest().permitAll());
+
         return http.build();
     }
 
