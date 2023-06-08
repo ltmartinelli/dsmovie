@@ -13,7 +13,7 @@ public class Movie {
     private Long id;
     private String title;
     private Double score;
-    private Integer count;
+    private Integer scoreCount;
     private String image;
 
     @OneToMany(mappedBy = "id.movie")
@@ -26,7 +26,7 @@ public class Movie {
         this.id = id;
         this.title = title;
         this.score = score;
-        this.count = count;
+        this.scoreCount = count;
         this.image = image;
     }
 
@@ -55,11 +55,11 @@ public class Movie {
     }
 
     public Integer getCount() {
-        return count;
+        return scoreCount;
     }
 
     public void setCount(Integer count) {
-        this.count = count;
+        this.scoreCount = count;
     }
 
     public String getImage() {
