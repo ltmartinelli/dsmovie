@@ -2,7 +2,8 @@ import
 {
   BrowserRouter,
   Routes,
-  Route
+  Route,
+  Navigate
 } from "react-router-dom";
 import Listing from './components/pages/Listing';
 import Form from './components/pages/Form';
@@ -15,9 +16,8 @@ export default function App()
       <Header />
       <Routes>
         <Route path="/" element={<Listing />} />
-        <Route path="/form">
-          <Route path=":movieId" element={<Form />} />
-        </Route>
+        <Route path="form/:movieId" element={<Form />} />
+        <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
   );
