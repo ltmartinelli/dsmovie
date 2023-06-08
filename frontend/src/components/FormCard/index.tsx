@@ -50,7 +50,7 @@ export default function FormCard({ movieId }: Props)
             }
         }
 
-        axios(config).then(response => { navigate("/") })
+        axios(config).then(() => { navigate("/") })
     }
 
     function handleChange(event: any)
