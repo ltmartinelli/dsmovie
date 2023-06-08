@@ -1,5 +1,5 @@
-import MovieCard from '../../MovieCard';
-import Pagination from '../../Pagination';
+import MovieCard from '../../components/MovieCard';
+import Pagination from '../../components/Pagination';
 import './styles.css'
 
 export default function Listing()

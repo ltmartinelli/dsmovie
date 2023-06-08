@@ -5,8 +5,8 @@ import
   Route,
   Navigate
 } from "react-router-dom";
-import Listing from './components/pages/Listing';
-import Form from './components/pages/Form';
+import Listing from './pages/Listing';
+import Form from './pages/Form';
 import Header from "./components/Header";
 
 export default function App()
